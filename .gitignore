@@ -1,0 +1,62 @@
+# ===== Virtual Environments =====
+.venv/
+venv/
+CPG/venv/
+ENV/
+env/
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+*.manifest
+*.spec
+
+# ===== Environment Variables =====
+.env
+CPG/.env
+
+# ===== IDE / Editor =====
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+*.sublime-workspace
+*.sublime-project
+
+# ===== OS Files =====
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# ===== Jupyter Notebooks =====
+.ipynb_checkpoints/
+
+# ===== Logs & Temp =====
+*.log
+*.tmp
+*.bak
+*.orig
+
+# ===== Data (optional - uncomment if you don't want to track large data files) =====
+# CPG/data/*.csv
+
+# ===== Streamlit =====
+.streamlit/secrets.toml
+
+# ===== Miscellaneous =====
+*.pickle
+*.pkl
+*.h5
+*.hdf5
+*.parquet
