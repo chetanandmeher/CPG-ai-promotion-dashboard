@@ -5,7 +5,7 @@ import streamlit as st
 load_dotenv()
 
 client = Groq(api_key=st.secrets["GROQ_API_KEY"])
-
+# client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 # ==============================================================================
 # 🔥 CORE: MULTI-SIGNAL OPTIMAL DISCOUNT PREDICTOR
 # ==============================================================================
@@ -115,7 +115,7 @@ Rules:
     try:
         response = client.chat.completions.create(
             messages=[{"role": "user", "content": prompt}],
-            model="llama3-8b-8192"
+            model="openai/gpt-oss-120b"
         )
         return response.choices[0].message.content
     except Exception as e:
@@ -180,7 +180,7 @@ Rules: specific numbers only, no generic advice, max 20 words per bullet.
 """
     response = client.chat.completions.create(
         messages=[{"role": "user", "content": prompt}],
-        model="llama-3.3-70b-versatile"
+        model="openai/gpt-oss-120b"
     )
     return response.choices[0].message.content
 
