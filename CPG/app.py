@@ -15,6 +15,66 @@ from src.ai_agent import (
 # ======================
 st.set_page_config(page_title="Promotion Analyzer", layout="wide")
 st.title("📊 AI-Powered Promotion Dashboard")
+st.markdown("""
+## 🚀 What This Dashboard Does
+
+This is an **AI-powered Promotion Optimization Dashboard** built for the **CPG (Consumer Packaged Goods) industry**.
+
+### 🎯 Objective
+The goal is to help businesses answer:
+
+👉 *What discount should I give to maximize impact without hurting revenue?*
+
+---
+
+### 🧠 Business Problem
+- Higher discounts → Increase sales (promotion lift)
+- But higher discounts → Reduce price (lower revenue)
+
+👉 So there is a trade-off:
+- ❌ Too low discount → No demand growth  
+- ❌ Too high discount → Profit loss  
+- ✅ Optimal discount → Balanced growth  
+
+---
+
+### 🤖 What This App Does
+This dashboard:
+
+- 📊 Analyzes discount vs sales performance  
+- 📈 Tracks promotion lift and revenue impact  
+- 🧠 Uses AI to generate business insights  
+- 🎯 Recommends the **optimal discount strategy**
+
+---
+
+### 💡 Why This Is Different
+Most dashboards only show data.
+
+👉 This system goes further:
+
+**It tells you what decision to take.**
+
+---
+
+### 🏢 Real-World Use Case
+This type of system is used in:
+
+- Retail pricing strategy  
+- Trade Promotion Optimization (TPO)  
+- Revenue Growth Management (RGM)  
+
+---
+
+### ⚡ How to Use
+1. Select Category / Season from sidebar  
+2. Analyze graphs  
+3. Check AI recommendation  
+4. Use suggested discount in business strategy  
+
+---
+
+""")
 
 # ======================
 # LOAD DATA
