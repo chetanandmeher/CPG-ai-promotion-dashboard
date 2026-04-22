@@ -112,11 +112,14 @@ Rules:
 - No textbook definitions. No generic statements.
 - Max 20 words per bullet.
 """
-    response = client.chat.completions.create(
-        messages=[{"role": "user", "content": prompt}],
-        model="llama-3.3-70b-versatile"
-    )
-    return response.choices[0].message.content
+    try:
+        response = client.chat.completions.create(
+            messages=[{"role": "user", "content": prompt}],
+            model="llama3-8b-8192"
+        )
+        return response.choices[0].message.content
+    except Exception as e:
+        return f"⚠️ AI Error: {str(e)}"
 
 
 # ==============================================================================
