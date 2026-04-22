@@ -19,9 +19,8 @@ st.title("📊 AI-Powered Promotion Dashboard")
 # ======================
 # LOAD DATA
 # ======================
-BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 file_path = os.path.join(BASE_DIR, "data", "retail_data.csv")
-
 @st.cache_data
 def get_data(path):
     return load_data(path)
