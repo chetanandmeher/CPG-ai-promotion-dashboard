@@ -3,8 +3,8 @@ import pandas as pd
 import plotly.graph_objects as go
 import plotly.express as px
 import os
-from data_loader import load_data
-from ai_agent import (
+from src.data_loader import load_data
+from src.ai_agent import (
     get_ai_summary,
     predict_optimal_discount,
     get_discount_recommendation,
